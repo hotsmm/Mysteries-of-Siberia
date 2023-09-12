@@ -120,4 +120,8 @@ h2 {
     overflow: hidden;
     padding-left: 3%;
   }  
+
+ .footer {
+    position: relative;
+  }	
 }  
