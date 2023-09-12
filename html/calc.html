@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/calc.css">
+    <title>Сказка Сибири</title>
+    <link rel="shortcut icon" href="../img/bird4.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <a href="#" class="logo" id="logo">+7(921)900-64-60</a>
+              <ul class="menu" id="menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./shaman.html">Тропа шаманов</a></li>
+                <li><a href="./khakassia.html">Хакассия</a></li>
+                <li><a href="./tiberkul.html">Озеро Тиберкуль</a></li>
+                <li class="navcalc"><a href="./forma.html">Заказать звонок</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+
+        
+          <div class="container container-calc">
+            
+              <div class="content">
+                
+              </div>
+          </div>
+
+              <div class="calc">
+                <h2>Мы поможем рассчитать примерную стоимость поездки</h2>
+                <div class="calc__fieldset">
+                  <label for="" class="calc__label">Количество человек</label>
+                  <input type="number" class="calc__inp" id="square" value="0" min="0" max="3000" onchange='calculateCost();'>
+                </div>
+                <div class="calc__fieldset">
+                  <label for="" class="calc__label">Количество дней</label>
+                  <input type="number" class="calc__inp" id="floor" value="0" min="0" max="113" onchange='calculateCost();'>
+                </div>
+                <div class="calc__fieldset">
+                  <label for="" class="calc__label">Направление</label>
+                  <select name="" class="calc__inp" id="materialType" onchange='calculateCost();'>
+                    <option value="0">Выберите из списка:</option>
+                    <option value="1">Тропа шаманов (500 руб.)</option>
+                    <option value="2">Заповедник столбы (1000 руб.)</option>
+                    <option value="3">Тиберкуль (1500 руб.)</option>
+                    <option value="4"> Хакассия (2000 руб.)</option>
+                  </select>
+                </div>
+    
+                <div class="calc__fieldset">
+                  <div class="calc__total">Cтоимость без скидки составит: <span id="totalCost" style="font-weight: bold;">Х</span> руб</div>
+                </div>
+              </div>          
+
+
+
+        
+            <!--<button class="form__button"><a href="../html/forma.html">Оставьте заявку и мы вам перезвоним</a></button>-->
+       
+      </div>  
+    </main>
+    <footer class="footer">
+      <div class="content">
+        <a class="developer" href="https://hotsmm.github.io/Bushueva-CV/" target="_blank">&copy; 2023 BushuevaMasha</a>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="../js/calc.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>  

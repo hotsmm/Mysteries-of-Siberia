@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/formastyle.css" />
+    <link rel="shortcut icon" href="../img/bird4.png" type="image/x-icon">
+    <title>Заявка на звонок</title>
+  </head>
+  <body>
+      <main class="main">
+        <nav class="navbar">
+            <div class="container">
+              <div class="navbar__wrap">
+                <div class="hamb">
+                  <div class="hamb__field" id="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <a href="#" class="logo" id="logo">+7(921)900-64-60</a>
+                <ul class="menu" id="menu">
+                  <li><a href="../index.html">Главная</a></li>
+                  <li><a href="../html/shaman.html">Тропа шаманов</a></li>
+                  <li><a href="../html/khakassia.html">Хакассия</a></li>
+                  <li><a href="../html/tiberkul.html">Озеро Тиберкуль</a></li>
+                  <li class="navcalc"><a href="../html/calc.html">Рассчитать стоимость поездки</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="popup" id="popup"></div>
+          <div class="container container__form">
+          <div class="form__wrap">
+            <div class="form__title">Оставьте заявку и мы вам сами перезвоним</div>
+
+            <form action="../php/order.php" class="form form-order" method="POST">
+              <div class="form__list">
+                <fieldset class="form__item">
+                  <!-- <label for="" class="form__label">Введите имя</label> -->
+                  <input type="text" name="username" placeholder="Введите имя*" required minlength="2" maxlength="32" class="form__inp">
+                </fieldset>
+                <fieldset class="form__item">
+                  <!-- <label for="" class="form__label">Введите емайл</label> -->
+                  <input type="email" name="usermail" placeholder="Введите емайл*" required  class="form__inp">
+                </fieldset>
+                <fieldset class="form__item">
+                  <!-- <label for="" class="form__label">Введите телефон</label> -->
+                  <input type="tel" name="userphone" placeholder="Введите телефон*" required class="form__inp"> <!--pattern="^\+7[1-9]{10}$"-->
+                </fieldset>
+                <fieldset class="form__item">
+                  <!-- <label for="" class="form__label">Введите телеграм</label> -->
+                  <input type="text" name="usertelegram" placeholder="Введите телеграм*" required class="form__inp">
+                </fieldset>
+
+                <fieldset class="form__item">
+                  <button class="form__btn">Отправить</button>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="content">
+              <a class="developer" href="https://hotsmm.github.io/Bushueva-CV/" target="_blank">&copy; 2023 BushuevaMasha</a>
+              </div> 
+        </footer>
+        <script src="../js/index.js"></script>  
+    </body>
+</html>

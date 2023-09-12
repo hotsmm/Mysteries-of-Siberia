@@ -1,0 +1,123 @@
+.container-calc {
+  position: absolute;
+  background-image: url("../img/gorizont.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110%;
+  height: 110%;
+  transition: all 0.1s ease;  
+}
+
+.main {
+  padding-bottom: 0;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+} 
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  padding-bottom: 40px;
+  color: #ffc132;
+  font-weight: bold;
+}
+
+.calc {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.calc__fieldset {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.calc__label {
+	font-size: 22px;
+  font-weight: bolder;
+	margin-bottom: 5px;
+	display: block;
+	margin-right: 20px;
+  color: #fff;
+}
+
+.calc__inp {
+	font-size: 20px;
+  background-color: #ff8b65;
+  color: #015574;
+}
+
+.calc__total {
+	font-size: 30px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #feef6a;
+  padding-top: 20px;
+}
+
+.calc__text {
+	font-size: 20px;
+  color: #015574;
+}
+
+.form-button {
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.form__button a {
+  padding: 15px;
+  margin: 0;
+}
+
+.content-calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+                  
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.developer {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden;
+  }
+
+  .calc {
+    left: 0;
+    top: 10%;
+    overflow: hidden;
+  }
+
+  .calc__label {
+    font-size: 16px;
+    padding-left: 3%;
+  }
+
+  .calc__inp {
+    font-size: 14px;
+    padding-left: 3%;
+  }
+
+  .calc__total {
+    font-size: 24px;
+    overflow: hidden;
+    padding-left: 3%;
+  }  
+}  
